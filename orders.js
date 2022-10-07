@@ -54,8 +54,8 @@ class Ticket{
 */
 
 //CODE HERE
-let firstTicket = ('pizza, bread, soda')
-
+let firstTicket = new Ticket('pizza, bread, soda', '7:03', '575')
+console.log(firstTicket)
 /*
     Call the `updateStatus` method on
     `firstTicket` passing in the string
@@ -63,3 +63,4 @@ let firstTicket = ('pizza, bread, soda')
 */
 
 //CODE HERE
+firstTicket.updateStatus('cooking')
