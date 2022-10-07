@@ -35,8 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+// const summedPrice = cart.reduce('pizza', 9.99, 'pasta', 8.99, 'salad', 7.99)
+// console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -55,6 +55,14 @@ const cart = [
 
 //CODE HERE
 
+function calcFinalPrice(cartTotal, couponValue, tax){
+        ((cartTotal * tax) - couponValue)
+            return (finalNumber)
+        
+}
+
+let firstPrice = new calcFinalPrice(50, 10, .06)
+console.log(firstPrice)
 
 
 //////////////////PROBLEM 3////////////////////
