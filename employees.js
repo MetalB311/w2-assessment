@@ -20,7 +20,15 @@
 */
 
 //CODE HERE
-
+let Employee{
+    constructor(name, shifts){
+        this.name = name;
+        this.shifts = shifts
+    }
+    getSchedule(){
+        console.log(`${name}, works on ${shifts}`)
+    }
+}
 
 
 /*
