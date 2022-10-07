@@ -87,7 +87,10 @@ console.log(firstPrice)
 
 /*
     TEXT ANSWER HERE
-
+name           need a name to know who im talking to and if anything goes wrong
+phone number   to be able to get ahold of customer
+address        know where im going for delivery
+card info      how you will be paying
 */
 
 /*
@@ -96,3 +99,9 @@ console.log(firstPrice)
 */
 
 //CODE HERE
+const customer = {
+    name: 'Byron',
+    phoneNumber: '555-8749',
+    address: '42 E Crescent Dr',
+    cardInfo: '48374673827368347'
+}
