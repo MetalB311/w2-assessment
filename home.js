@@ -56,7 +56,7 @@ let canWeDeliver = (zipCode) => {
     if (deliveryAreaZipCodes[i] === (zipCode)){
         return('You are eligible for delivery')
           }      else {return('You are NOT eligible for delivery')
-    }
+    }   //dont need that else... if its false, then ^^^ it will return ^ *retake help*
     }
 console.log(canWeDeliver(82505))
 /* 
@@ -122,6 +122,12 @@ const deals = [
 console.log('finish #3')
 // let result = deals.replace[('15% off!', '10% off!')]
 
+
+deals[0].title = deals[0].title.replace('15','10')
+
+
+        //this is stating that: the deals index0 at title = the deals index0 at title.replace 15% with 10%   if just deals.title, throws a error trying to replace a number in the second title:*retakeunderstandment*
+console.log(deals)
 // console.log(deals)
 
 
@@ -139,7 +145,14 @@ console.log('finish #3')
 */
 
 //CODE HERE
-console.log ('finsih this as well')
+// console.log ('finsih this as well')
 // let result1 = deals.replace('March, April')
 
-// console.log(deals)
+
+deals[1].desc = deals[1].desc.replace('March', 'April').trim()
+
+//also note, replace and trim and everything...... case sensitive  :)
+
+//taking the deals at index1 (the second number) desc = deals index1 desc replace(march with april)replace uses "what you want to replace, what to replace it with" .trim()will take out all negative space *retake understand*
+
+console.log(deals)

@@ -30,14 +30,14 @@
     'kids'
 */
 
-//CODE HERE
+//CODE HERE             ///right
 let pizza = {
     name: 'Wise Guy',
     price: 20,
     category: 'Entree',
     popularity: 10,
     rating: 4,
-    tags: ['gluten-free, vegan, keto']
+    tags: ['gluten-free', 'vegan','keto']   //each need a '' around them to identify them as different strings inside the variable although so so so close...  **retake ''**
 }
 
 
@@ -50,7 +50,8 @@ let pizza = {
 */
 
 //CODE HERE
-console.log(pizza.popularity)
+
+console.log(pizza.popularity)     ///right
 
 /*
     Second, log the second tag in your pizza's
@@ -60,8 +61,9 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
-console.log(pizza.tags[0]);
 
+console.log(pizza.tags[1]) //<-------figure out why that ; needs to be there
+                                        /////////figured it out 
 /*
     Third, destructure the price off of the
     pizza object.
@@ -70,7 +72,7 @@ console.log(pizza.tags[0]);
 */
 
 //CODE HERE
-(pizza.price) = '25'
+pizza.price = ('25')      /////had it written (pizza.price) = '25'  hahaha
 console.log(pizza.price)
 
 /*
@@ -81,7 +83,7 @@ console.log(pizza.price)
 */
 
 //CODE HERE
- {pizza.category} =  
+//  {pizza.category} =  
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -96,14 +98,16 @@ console.log(pizza.price)
 */
 
 //CODE HERE
-let foodArr = [
-    let name: 'Wise Guy',
-    price: 20,
-    category: 'Entree',
-    popularity: 10,
-    rating: 4,
-    tags: ['gluten-free, vegan, keto']
-]
+
+console.log('**************************************')
+// let foodArr = {
+//     [piName: 'Wise Guy',
+//     price: 20,
+//     category: 'Entree',
+//     popularity: 10,
+//     rating: 4,
+//     tags: ['gluten-free, vegan, keto']]
+// }
 
 
 //////////////////PROBLEM 4////////////////////

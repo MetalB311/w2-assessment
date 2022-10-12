@@ -20,7 +20,7 @@
 */
 
 //CODE HERE
-let Employee{
+let Employee {
     constructor(name, shifts){
         this.name = name;
         this.shifts = shifts
