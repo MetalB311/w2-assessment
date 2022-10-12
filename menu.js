@@ -72,7 +72,7 @@ console.log(pizza.tags[1]) //<-------figure out why that ; needs to be there
 */
 
 //CODE HERE
-pizza.price = ('25')      /////had it written (pizza.price) = '25'  hahaha
+pizza.price = (25)      /////had it written (pizza.price) = '25'  hahaha
 console.log(pizza.price)
 
 /*
@@ -82,9 +82,9 @@ console.log(pizza.price)
     Print the value of your category variable. 
 */
 
-//CODE HERE
-//  {pizza.category} =  
-
+// CODE HERE
+pizza.category = pizza.category.replace('Entree', 'Pizza')
+console.log(pizza.category)
 //////////////////PROBLEM 3////////////////////
 /* 
     Create an array with about 5 objects in it.
@@ -99,15 +99,33 @@ console.log(pizza.price)
 
 //CODE HERE
 
-console.log('**************************************')
-// let foodArr = {
-//     [piName: 'Wise Guy',
-//     price: 20,
-//     category: 'Entree',
-//     popularity: 10,
-//     rating: 4,
-//     tags: ['gluten-free, vegan, keto']]
-// }
+
+let foodArr = [                    //<----I had a {
+    {
+        name: 'Wise Guy',
+        price: 20,
+        category: 'Entree',
+        popularity: 7,
+        rating: 7,
+        tags: ['gluten-free', 'vegan', 'keto'] //forgot the '' around EACH
+    },        ///comma lets me add another object
+    {
+        name: 'Pepperoni',
+        price: 15,
+        category: 'Entree',
+        popularity: 10,
+        rating: 4,
+        tags: ['gluten-free', 'vegan', 'keto'] //forgot the '' around EACH
+    },        ///comma lets me add another object
+    {
+        name: 'Strombolli',
+        price: 17,
+        category: 'Entree',
+        popularity: 8,
+        rating: 9,
+        tags: ['vegan', 'well done'] //forgot the '' around EACH
+    }        
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -124,8 +142,9 @@ console.log('**************************************')
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((foodobj) => foodobj.tags.includes('gluten-free'))
 
+console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
@@ -166,9 +185,19 @@ console.log('**************************************')
     
     Return the filtered array from the entire function
 */
-
+console.log('**************************************') 
 //CODE HERE
 
+function filterByProperty (property, number, type){
+    let filteredArray = foodArr.filter((foodObj) =>{
+        if(type === 'above') {
+        return foodObj[property] > number
+        }else if (type === 'below') {
+            return foodObj[property] < number
+        }
+    })
+    return filteredArray
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -178,3 +207,4 @@ console.log('**************************************')
 */
 
 //CODE HERE
+console.log(filterByProperty('rating', 6 , 'above'))
