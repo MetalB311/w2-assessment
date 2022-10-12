@@ -35,10 +35,11 @@ class Ticket{
         this.items = items;
         this.orderTime = orderTime;
         this.customerId = customerId;
-        this.status = status
+        this.status = 'queued'
     } updateStatus(newStatus){
+        this.status = newStatus
          console.log(`The order for ${this.customerId} is now ${newStatus}`)
-    }
+    }      //right there I had this.status instead of newStatus ^^^^^^^^^
 }
 // let status = keys(queued)
 
