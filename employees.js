@@ -20,15 +20,15 @@
 */
 
 //CODE HERE
-let Employee {
+class Employee {                    /////needed class not let
     constructor(name, shifts){
         this.name = name;
         this.shifts = shifts
     }
     getSchedule(){
-        console.log(`${name}, works on ${shifts}`)
+        console.log(`${this.name}, works on ${this.shifts}`)
     }
-}
+}   //literally forgot ^^^^ the "this." ....  ^^^^pay attention lol
 
 
 /*
@@ -42,14 +42,14 @@ let Employee {
 */
 
 //CODE HERE
-
+let empOne = new Employee('Ricky', 'weekday nights, weekend nights')
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
 //CODE HERE
-
+empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
@@ -64,8 +64,11 @@ let Employee {
 */
 
 //CODE HERE
+// const empTwo = new Employee (...empOne, this.name: 'Nick')
 
+// empTwo.getSchedule()
 
+//still cant figure this one out... will look over it again
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -91,9 +94,21 @@ let Employee {
 */
 
 //CODE HERE
+class Manager extends Employee {
+    constructor(name, shifts, employees){
+        super(name, shifts)
+        this.employees = employees
+    }
+    getEmployees(){
+        console.log(`${this.name} manages ${this.employees}`)
+    }
+    addEmployee(emp) {
+        this.employees.push(emp)
+    }
+}
 
 
-
+const manager = new Manager('Larry', 'weekday mornings, weekday afternoons', ['cece', 'schmidt'])
 /*
     Create a new instance of your class.
     Save it to a variable called `manager`.
