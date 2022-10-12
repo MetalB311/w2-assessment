@@ -108,7 +108,7 @@ class Manager extends Employee {
 }
 
 
-const manager = new Manager('Larry', 'weekday mornings, weekday afternoons', ['cece', 'schmidt'])
+
 /*
     Create a new instance of your class.
     Save it to a variable called `manager`.
@@ -122,6 +122,7 @@ const manager = new Manager('Larry', 'weekday mornings, weekday afternoons', ['c
 
 //CODE HERE
 
+let manager = new Manager('Larry', 'weekday mornings, weekday afternoons', ['cece', 'schmidt'])
 
 /*
     Call the `getEmployees` method on the
@@ -129,7 +130,7 @@ const manager = new Manager('Larry', 'weekday mornings, weekday afternoons', ['c
 */
 
 //CODE HERE
-
+manager.getEmployees(manager)
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -137,7 +138,7 @@ const manager = new Manager('Larry', 'weekday mornings, weekday afternoons', ['c
 */
 
 //CODE HERE 
-
+manager.addEmployee('Coach')
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -145,3 +146,4 @@ const manager = new Manager('Larry', 'weekday mornings, weekday afternoons', ['c
 */
 
 //CODE HERE
+manager.getEmployees()
