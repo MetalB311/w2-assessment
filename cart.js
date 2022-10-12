@@ -35,8 +35,10 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce('pizza', 9.99, 'pasta', 8.99, 'salad', 7.99)
-// console.log(summedPrice)
+const summedPrice = cart.reduce((a,c) => {
+    return a + c.price
+}, 0)    ////needs to start at 0 and go up
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -56,14 +58,11 @@ const cart = [
 //CODE HERE
 
 function calcFinalPrice(cartTotal, couponValue, tax){
-        ((cartTotal * tax) - couponValue)
-}
-            return (finalNumber){
+            return cartTotal + (cartTotal * tax) -couponValue
         
 }
 
-let firstPrice = new calcFinalPrice(50, 10, .06)
-console.log(firstPrice)
+console.log(calcFinalPrice(50, 11, .08))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -100,9 +99,13 @@ card info      how you will be paying
 */
 
 //CODE HERE
-const customer = {
+let custOb = {
     name: 'Byron',
     phoneNumber: '555-8749',
     address: '42 E Crescent Dr',
     cardInfo: '48374673827368347'
 }
+
+console.log(custOb.name)
+console.log(custOb.phoneNumber)
+console.log(custOb.address)
